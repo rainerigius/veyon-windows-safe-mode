@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+; Add required services to Safe Mode with Networking
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\PlugPlay]
+@="Service"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\EventLog]
+@="Service"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\RpcSs]
+@="Service"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\Tcpip]
+@="Service"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Network\VeyonService]
+@="Service"
+
+; Add Veyon to startup
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+"VeyonSafeMode"="\"C:\\Program Files\\Veyon\\veyon-cli.exe\""
+
+; Set VeyonService startup type to Automatic
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\VeyonService]
+"Start"=dword:00000002
