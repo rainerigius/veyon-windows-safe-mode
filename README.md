@@ -1,7 +1,7 @@
 # Veyon in Windows Safe Mode
 
 ## Two ways to solve the same problem
-Reading the following file description you may ask yourself "Why should I block the safe mode if I want to run Veyon in it?"
+Reading the following file description you may ask yourself "Why should I block the safe mode if I want to run Veyon in it?".
 Well, trying personally to run Veyon in the safe mode I came to an easier solution, blocking directly users from accessing the safe mode.
 Sure, this is not what I  needed so I made sure that Veyon could run in safe mode.
 But if Veyon is made to monitor and control computers why I should allow people to try entering safe mode?
